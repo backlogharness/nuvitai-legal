@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuvitai - Legal</title>
+    <style>
+        :root {
+            --primary: #10B981;
+            --primary-dark: #059669;
+            --bg: #0F172A;
+            --surface: #1E293B;
+            --text: #F8FAFC;
+            --text-muted: #94A3B8;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .card {
+            background-color: var(--surface);
+            padding: 2.5rem 2rem;
+            border-radius: 1rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.1);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .card h2 {
+            margin: 0 0 1rem 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">Nuvitai</div>
+        <div class="subtitle">Documentação Legal e Privacidade</div>
+
+        <div class="card-grid">
+            <a href="politica-de-privacidade.html" class="card">
+                <h2>Política de Privacidade</h2>
+                <p>Entenda como coletamos, usamos e protegemos seus dados pessoais de saúde e uso do aplicativo.</p>
+            </a>
+
+            <a href="termos-de-uso.html" class="card">
+                <h2>Termos de Serviço</h2>
+                <p>Leia as regras, diretrizes e o acordo legal para a utilização do aplicativo e dos serviços de IA.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Nuvitai App. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
